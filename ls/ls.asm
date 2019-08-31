@@ -13,3 +13,10 @@ _start:
 	mov rbx, 0x6c6c617473696c2d
 	push rbx
 	mov rsi, rsp
+
+	push rdx
+	push rsi
+	push rdi
+	mov rsi, rsp
+	lea rax, [rdx+59]
+	syscall
